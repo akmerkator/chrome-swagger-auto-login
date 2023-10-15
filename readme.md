@@ -21,12 +21,13 @@ Clicking this extension's icon brings up a popup where you can enter your userna
 
 After saving your credentials you can click the 'Log In' button which has now been added to swagger ui pages to have the extension automatically set your auth token.
 
-
 ## Important Note
-This currently only works if the endpoint for getting your auth token is `/auth/login`. It also assumes that the response is in the form of
+
+This currently only works if the endpoint for getting your auth token is POST `/v2/account/login`. It also assumes that the response is in the form of
+
 ```json
 {
-    "token": "ey......"
+  "token": "ey......"
 }
 ```
 
